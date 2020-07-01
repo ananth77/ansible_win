@@ -1,0 +1,8 @@
+---
+- hosts: winhost
+
+  tasks:
+  - name: Download sql express to specified path
+    win_get_url:
+      url: https://download.microsoft.com/download/7/c/1/7c14e92e-bdcb-4f89-b7cf-93543e7112d1/SQLEXPR_x64_ENU.exe
+      dest: C:\SQLEXPR_x64_ENU.exe
